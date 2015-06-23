@@ -10,7 +10,6 @@
 		5AA1F9C5188E701B00EA534C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA1F9C4188E701B00EA534C /* Foundation.framework */; };
 		5AA1F9F3188E70DA00EA534C /* EUExIndexBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1F9EF188E70DA00EA534C /* EUExIndexBar.m */; };
 		5AA1F9F4188E70DA00EA534C /* CMIndexBar_IB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1F9F2188E70DA00EA534C /* CMIndexBar_IB.m */; };
-		A0F5CFB51A8843D100A6455A /* BATableViewIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F5CFB41A8843D100A6455A /* BATableViewIndex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +28,6 @@
 		5AA1F9C1188E701B00EA534C /* libuexIndexBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexIndexBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA1F9C4188E701B00EA534C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5AA1F9C8188E701B00EA534C /* EUExIndexBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExIndexBar-Prefix.pch"; sourceTree = "<group>"; };
-		5AA1F9D2188E701B00EA534C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5AA1F9EB188E70DA00EA534C /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
 		5AA1F9EC188E70DA00EA534C /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
 		5AA1F9ED188E70DA00EA534C /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
@@ -37,8 +35,6 @@
 		5AA1F9EF188E70DA00EA534C /* EUExIndexBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUExIndexBar.m; sourceTree = "<group>"; };
 		5AA1F9F1188E70DA00EA534C /* CMIndexBar_IB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMIndexBar_IB.h; sourceTree = "<group>"; };
 		5AA1F9F2188E70DA00EA534C /* CMIndexBar_IB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMIndexBar_IB.m; sourceTree = "<group>"; };
-		A0F5CFB31A8843D100A6455A /* BATableViewIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableViewIndex.h; sourceTree = "<group>"; };
-		A0F5CFB41A8843D100A6455A /* BATableViewIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATableViewIndex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				5AA1F9C4188E701B00EA534C /* Foundation.framework */,
-				5AA1F9D2188E701B00EA534C /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,8 +107,6 @@
 		5AA1F9F0188E70DA00EA534C /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
-				A0F5CFB31A8843D100A6455A /* BATableViewIndex.h */,
-				A0F5CFB41A8843D100A6455A /* BATableViewIndex.m */,
 				5AA1F9F1188E70DA00EA534C /* CMIndexBar_IB.h */,
 				5AA1F9F2188E70DA00EA534C /* CMIndexBar_IB.m */,
 			);
@@ -173,7 +166,6 @@
 			files = (
 				5AA1F9F4188E70DA00EA534C /* CMIndexBar_IB.m in Sources */,
 				5AA1F9F3188E70DA00EA534C /* EUExIndexBar.m in Sources */,
-				A0F5CFB51A8843D100A6455A /* BATableViewIndex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

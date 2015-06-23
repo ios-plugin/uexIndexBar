@@ -19,7 +19,6 @@
 		3CAF570B18C1771000F9EB8D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAF570A18C1771000F9EB8D /* AudioToolbox.framework */; };
 		3CAF571618C1777300F9EB8D /* EUExIndexBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAF571218C1777300F9EB8D /* EUExIndexBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CAF571718C1777300F9EB8D /* CMIndexBar_IB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAF571518C1777300F9EB8D /* CMIndexBar_IB.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A0F5CFB81A8843E500A6455A /* BATableViewIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F5CFB71A8843E500A6455A /* BATableViewIndex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,8 +53,6 @@
 		3CAF571218C1777300F9EB8D /* EUExIndexBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EUExIndexBar.m; path = EUExIndexBar/EUExIndexBar.m; sourceTree = SOURCE_ROOT; };
 		3CAF571418C1777300F9EB8D /* CMIndexBar_IB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMIndexBar_IB.h; sourceTree = "<group>"; };
 		3CAF571518C1777300F9EB8D /* CMIndexBar_IB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMIndexBar_IB.m; sourceTree = "<group>"; };
-		A0F5CFB61A8843E500A6455A /* BATableViewIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableViewIndex.h; sourceTree = "<group>"; };
-		A0F5CFB71A8843E500A6455A /* BATableViewIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATableViewIndex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +136,6 @@
 		3CAF571318C1777300F9EB8D /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
-				A0F5CFB61A8843E500A6455A /* BATableViewIndex.h */,
-				A0F5CFB71A8843E500A6455A /* BATableViewIndex.m */,
 				3CAF571418C1777300F9EB8D /* CMIndexBar_IB.h */,
 				3CAF571518C1777300F9EB8D /* CMIndexBar_IB.m */,
 			);
@@ -201,7 +196,6 @@
 			files = (
 				3CAF571618C1777300F9EB8D /* EUExIndexBar.m in Sources */,
 				3CAF571718C1777300F9EB8D /* CMIndexBar_IB.m in Sources */,
-				A0F5CFB81A8843E500A6455A /* BATableViewIndex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
