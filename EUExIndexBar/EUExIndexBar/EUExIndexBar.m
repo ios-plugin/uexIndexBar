@@ -22,6 +22,9 @@
         int inY = [[inArguments objectAtIndex:1] intValue];
         int inWidth = [[inArguments objectAtIndex:2] intValue];
         int inHeight = [[inArguments objectAtIndex:3] intValue];
+        if(self.m_indexBar){
+            [self.m_indexBar removeFromSuperview];
+        }
         
         CMIndexBar_IB *temp_indexBar = [[CMIndexBar_IB alloc] initWithFrame:CGRectMake(inX, inY, inWidth, inHeight)];
         self.m_indexBar = temp_indexBar;
@@ -51,7 +54,7 @@
                 if([jsonObject objectForKey:@"textColor"]){
                     textColor=[self returnUIColorFromHTMLStr:[jsonObject objectForKey:@"textColor"]];
                 }
-                if([jsonObject objectForKey:@"isScrollable"]&&[[jsonObject objectForKey:@"isScrollable"] boolValue]==YES){
+                if([jsonObject objectForKey:@"isScrollable"]&&([[jsonObject objectForKey:@"isScrollable"] boolValue]==YES||[[jsonObject objectForKey:@"isScrollable"]isEqual:@"true"]||[[jsonObject objectForKey:@"isScrollable"]isEqual:@"TRUE"])){
                     m_indexBar.isScrollable=YES;
                 }
             }
@@ -66,6 +69,7 @@
         [m_indexBar setIndexes:array];
         
         [m_indexBar setDelegate:self];
+        
         if(!m_indexBar.isScrollable){
             [EUtility brwView:meBrwView addSubview:m_indexBar];
         }else{
