@@ -19,6 +19,7 @@
 		// Default colors.
 		self.textColor = [UIColor blackColor];
 		self.highlightedBackgroundColor = [UIColor lightGrayColor];
+        self.isScrollable=NO;
 	}
 	return self;
 }

@@ -15,4 +15,5 @@
 }
 
 @property (nonatomic, retain)CMIndexBar_IB *m_indexBar;
+
 @end

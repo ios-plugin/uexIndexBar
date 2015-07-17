@@ -25,7 +25,7 @@
 @property (nonatomic, assign) NSObject<CMIndexBarDelegate> *delegate;
 @property (nonatomic, retain) UIColor *highlightedBackgroundColor;
 @property (nonatomic, retain) UIColor *textColor;
-
+@property (nonatomic,assign)BOOL isScrollable;
 @end
 
 @protocol CMIndexBarDelegate<NSObject>

@@ -51,6 +51,9 @@
                 if([jsonObject objectForKey:@"textColor"]){
                     textColor=[self returnUIColorFromHTMLStr:[jsonObject objectForKey:@"textColor"]];
                 }
+                if([jsonObject objectForKey:@"isScrollable"]&&[[jsonObject objectForKey:@"isScrollable"] boolValue]==YES){
+                    m_indexBar.isScrollable=YES;
+                }
             }
         }
         [m_indexBar setBackgroundColor:[UIColor clearColor]];
@@ -63,7 +66,12 @@
         [m_indexBar setIndexes:array];
         
         [m_indexBar setDelegate:self];
-        [EUtility brwView:meBrwView addSubview:m_indexBar];
+        if(!m_indexBar.isScrollable){
+            [EUtility brwView:meBrwView addSubview:m_indexBar];
+        }else{
+            [EUtility brwView:meBrwView addSubviewToScrollView:m_indexBar];
+        }
+        
     }
 }
 
