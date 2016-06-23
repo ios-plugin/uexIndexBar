@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EUExBase.h"
 #import "CMIndexBar_IB.h"
 
 @interface EUExIndexBar : EUExBase<CMIndexBarDelegate>{

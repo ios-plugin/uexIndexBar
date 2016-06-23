@@ -29,15 +29,15 @@
         CMIndexBar_IB *temp_indexBar = [[CMIndexBar_IB alloc] initWithFrame:CGRectMake(inX, inY, inWidth, inHeight)];
         self.m_indexBar = temp_indexBar;
         [temp_indexBar release];
-
-
-     
-
+        
+        
+        
+        
         NSArray *array = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",
-                     @"G",@"H",@"I",@"J",@"K",
-                     @"L",@"M",@"N",@"O",@"P",
-                     @"Q",@"R",@"S",@"T",@"U",
-                     @"V",@"W",@"X",@"Y",@"Z",nil];
+                          @"G",@"H",@"I",@"J",@"K",
+                          @"L",@"M",@"N",@"O",@"P",
+                          @"Q",@"R",@"S",@"T",@"U",
+                          @"V",@"W",@"X",@"Y",@"Z",nil];
         UIColor *textColor =RGBCOLOR(0, 127, 248);
         
         
@@ -71,22 +71,25 @@
         [m_indexBar setDelegate:self];
         
         if(!m_indexBar.isScrollable){
-            [EUtility brwView:meBrwView addSubview:m_indexBar];
+            //[EUtility brwView:meBrwView addSubview:m_indexBar];
+            [[self.webViewEngine webView] addSubview:m_indexBar];
         }else{
-            [EUtility brwView:meBrwView addSubviewToScrollView:m_indexBar];
+            //[EUtility brwView:meBrwView addSubviewToScrollView:m_indexBar];
+            [[self.webViewEngine webScrollView] addSubview:m_indexBar];
         }
         
     }
 }
 
 - (void)indexSelectionEndChange:(CMIndexBar_IB *)IndexBar{
-   
+    
 }
 
 -(void)onTouchResult:(NSString *)jsonData{
-        jsonData = [jsonData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        //NSString *jsString = [NSString stringWithFormat:@"uexIndexBar.onTouchResult(\"%@\");",jsonData];
-    [self jsSuccessWithName:@"uexIndexBar.onTouchResult" opId:0 dataType:1 strData:jsonData];
+    //jsonData = [jsonData stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    //NSString *jsString = [NSString stringWithFormat:@"uexIndexBar.onTouchResult(\"%@\");",jsonData];
+    //[self jsSuccessWithName:@"uexIndexBar.onTouchResult" opId:0 dataType:1 strData:jsonData];
+    [self.webViewEngine callbackWithFunctionKeyPath:@"uexIndexBar.onTouchResult" arguments:ACArgsPack(@0,@1,jsonData)];
 }
 
 - (void)indexSelectionDidChange:(CMIndexBar_IB *)IndexBar index:(int)index title:(NSString*)title{

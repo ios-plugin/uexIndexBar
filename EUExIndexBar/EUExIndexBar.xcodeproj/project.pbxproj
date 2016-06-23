@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21563E761D1B821E0027816B /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21563E751D1B821E0027816B /* AppCanKit.framework */; };
 		5AA1F9C5188E701B00EA534C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA1F9C4188E701B00EA534C /* Foundation.framework */; };
 		5AA1F9F3188E70DA00EA534C /* EUExIndexBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1F9EF188E70DA00EA534C /* EUExIndexBar.m */; };
 		5AA1F9F4188E70DA00EA534C /* CMIndexBar_IB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1F9F2188E70DA00EA534C /* CMIndexBar_IB.m */; };
@@ -25,10 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		21563E751D1B821E0027816B /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 		5AA1F9C1188E701B00EA534C /* libuexIndexBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexIndexBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA1F9C4188E701B00EA534C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5AA1F9C8188E701B00EA534C /* EUExIndexBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExIndexBar-Prefix.pch"; sourceTree = "<group>"; };
-		5AA1F9EB188E70DA00EA534C /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
 		5AA1F9EC188E70DA00EA534C /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
 		5AA1F9ED188E70DA00EA534C /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
 		5AA1F9EE188E70DA00EA534C /* EUExIndexBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExIndexBar.h; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21563E761D1B821E0027816B /* AppCanKit.framework in Frameworks */,
 				5AA1F9C5188E701B00EA534C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +99,6 @@
 		5AA1F9EA188E70DA00EA534C /* engineHeader */ = {
 			isa = PBXGroup;
 			children = (
-				5AA1F9EB188E70DA00EA534C /* EUExBase.h */,
 				5AA1F9EC188E70DA00EA534C /* EUExBaseDefine.h */,
 				5AA1F9ED188E70DA00EA534C /* EUtility.h */,
 			);
@@ -107,6 +108,7 @@
 		5AA1F9F0188E70DA00EA534C /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				21563E751D1B821E0027816B /* AppCanKit.framework */,
 				5AA1F9F1188E70DA00EA534C /* CMIndexBar_IB.h */,
 				5AA1F9F2188E70DA00EA534C /* CMIndexBar_IB.m */,
 			);
@@ -249,6 +251,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexIndexBar/";
 				DSTROOT = /tmp/EUExIndexBar.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExIndexBar/sourceCode",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EUExIndexBar/EUExIndexBar-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
@@ -264,6 +270,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexIndexBar/";
 				DSTROOT = /tmp/EUExIndexBar.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExIndexBar/sourceCode",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EUExIndexBar/EUExIndexBar-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
