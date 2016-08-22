@@ -90,6 +90,7 @@
     //NSString *jsString = [NSString stringWithFormat:@"uexIndexBar.onTouchResult(\"%@\");",jsonData];
     //[self jsSuccessWithName:@"uexIndexBar.onTouchResult" opId:0 dataType:1 strData:jsonData];
     [self.webViewEngine callbackWithFunctionKeyPath:@"uexIndexBar.onTouchResult" arguments:ACArgsPack(@0,@1,jsonData)];
+    [self.webViewEngine callbackWithFunctionKeyPath:@"uexIndexBar.onIndexClick" arguments:ACArgsPack(jsonData)];
 }
 
 - (void)indexSelectionDidChange:(CMIndexBar_IB *)IndexBar index:(int)index title:(NSString*)title{
